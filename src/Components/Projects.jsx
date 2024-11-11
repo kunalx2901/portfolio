@@ -1,4 +1,4 @@
-import sundown from '../assets/sundown.png'
+import project from '../project'
 
 export function Projects(){
     return <>
@@ -8,12 +8,14 @@ export function Projects(){
             </div>
         
         <div className='flex justify-center items-center gap-20 mt-32'>
-            <div className='w-[25%] text-xl font-bold border-2 border-slate-300 rounded-3xl p-7 bg-black shadow-2xl shadow-zinc-800 text-white gap-10 z-10 hover:scale-95 duration-500 ease-in-out'>
-                <img src={sundown} alt="" className='rounded-xl mb-4'/>
-                 <a href="https://bubble-game-project01.vercel.app/" target="_blank" rel="noreferrer noopener" >
-                 <p className='text-3xl font-bold p-3 flex justify-center items-end'>Sundown <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" className=' fill-white'/></svg> </p> </a>
-                <p className='text-lg font-semibold p-3'>Sundown is a dynamic, feel-good frontend website built using GSAP, HTML, Tailwind, and JavaScript. It showcases smooth, engaging animations that elevate user experience, making it visually captivating. Designed for a seamless blend of modern web design and fluid interactions, Sundown highlights creativity and technical expertise in frontend development.</p>
-            </div>
+            {project.map((e)=>{
+                return  <div key={e.id} className='w-[25%] text-xl font-bold border-2 border-slate-300 rounded-3xl p-7 bg-black shadow-2xl shadow-zinc-800 text-white gap-10 z-10 hover:scale-90 duration-500 ease-in-out'>
+                                <img src={e.img} alt="" className='rounded-xl mb-4'/>
+                                <a href={e.link} target="_blank" rel="noreferrer noopener" >
+                                <p className='text-3xl font-bold p-3 flex justify-center items-end'>{e.title}<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" className=' fill-white'/></svg> </p> 
+                                <p className='text-lg font-semibold p-3'>{e.detail}</p></a>
+                            </div>
+                     })}
        
         </div>
         </div>

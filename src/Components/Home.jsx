@@ -31,7 +31,7 @@ export function Home(){
        <div className="lg:block lg:font-bold lg:text-[110px] lg:relative lg:top-13 lg:z-50 hidden ">Hey, I'm Kunal Sharma
         </div>
         <div className="lg:block lg:font-bold lg:text-slate-800 lg:text-[110px] lg:relative lg:top-[-20px] lg:z-50 hidden ">Hey, I'm Kunal Sharma</div>
-        <div className="lg:block lg:font-bold lg:text-[110px] lg:text-slate-600 lg:relative lg:top-[-40px] lg:z-30 hidden ">Hey, I'm Kunal Sharma</div>
+            <div className="lg:block lg:font-bold lg:text-[110px] lg:text-slate-600 lg:relative lg:top-[-40px] lg:z-30 hidden ">Hey, I'm Kunal Sharma</div>
        </div>
         
 
