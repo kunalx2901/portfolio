@@ -18,7 +18,7 @@ export default function About(){
         <img src={myImage} alt="" className='rounded-3xl lg:w-64 w-48 h-64 lg:h-80 hover:scale-110 duration-500 ease-in-out cursor-not-allowed'/>
         <div className='lg:w-[50%] lg:text-3xl text-lg font cursor-context-menu w-[64%]'>
         <p>
-        I'm Kunal Sharma, a passionate web developer and tech enthusiast currently pursuing my B.Tech in Computer Science Engineering at CGC Landran. With a strong foundation in TypeScript, JavaScript, React, and databases like Postgres and Prisma ORM, I enjoy building responsive, user-centric applications. Right now, I’m working on projects like my personal blog application, where I can integrate creativity with robust technology. Known for my confidence and leadership skills, I'm always eager to learn, innovate, and tackle new challenges in the tech world.
+        I’m Kunal Sharma, a passionate web developer and tech enthusiast currently pursuing my B.Tech in Computer Science Engineering at CGC Landran. With a strong foundation in TypeScript, JavaScript, React, and databases like Postgres and Prisma ORM, I enjoy building responsive, user-centric applications. Right now, I’m working on projects like my personal blog application, where I can integrate creativity with robust technology. Known for my confidence and leadership skills, I’m always eager to learn, innovate, and tackle new challenges in the tech world.
         </p>
         </div>
        
