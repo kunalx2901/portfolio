@@ -1,8 +1,9 @@
 import project from '../project'
+import githubIcon from "../assets/tech-icons/github icon.webp"
 
 export function Projects(){
     return <>
-        <div className="font-bold text-6xl h-[100vh]">
+        <div className="font-bold text-6xl min-h-[100vh] flex flex-col items-center mb-12 gap-5">
             <div className="flex justify-center items-center mt-10">
                 Projects
             </div>
@@ -18,6 +19,10 @@ export function Projects(){
                      })}
        
         </div>
+
+        <a href='https://github.com/kunalx2901' target="_blank" rel="noreferrer noopener">
+        <button className='text-lg font-bold py-3 px-5 flex justify-center items-center mt-10 bg-black text-white rounded-2xl hover:scale-90 duration-500 ease-in-out'>More Projects on <img src={githubIcon} alt="" className='w-8 ml-2'/> </button>
+        </a>
         </div>
     </>
 }

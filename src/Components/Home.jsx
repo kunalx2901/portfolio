@@ -1,18 +1,29 @@
 import { Gooy } from "./Gooy";
 import webDev from '../assets/webDev.png'
-// import motion from 'framer-motion'
+import {motion} from 'framer-motion'
 
 export function Home(){
     return <>
     
     <div className="font font-bold text-9xl flex lg:flex-col justify-center items-center relative lg:h-[90vh] max-h-[100vh]">
         
-        <div className="absolute z-10 lg:left-[150px] left-[80px]">
+        <motion.div 
+        initial={{
+            x:-800
+        }}
+        animate={{
+            x:0
+        }}
+        transition={{
+            duration:1.5,
+            ease:"easeInOut"
+        }}
+        className="absolute z-10 lg:left-[150px] left-[80px]">
             <img src={webDev} alt="" className="lg:w-[60%] w-[75%]"/>
-        </div>
+        </motion.div>
         <div className="font text-6xl lg:hidden relative h-[90vh]">
             <span className="font-semibold text-slate-600">Hey</span> <br></br> 
-             <span className="font-semibold text-slate-900">I'm Kunal Sharma</span>
+             <span className="font-semibold text-slate-900">I’m Kunal Sharma</span>
         </div>
         <div className="text-3xl absolute top-[800px] lg:hidden mb-10">
             <span className="relative top-[-120px] left-[-29%] text-6xl font-semibold text-slate-600">Full </span>
@@ -28,10 +39,10 @@ export function Home(){
         </div>
        
        <div className="absolute top-45 right-28">
-       <div className="lg:block lg:font-bold lg:text-[110px] lg:relative lg:top-13 lg:z-50 hidden ">Hey, I'm Kunal Sharma
+       <div className="lg:block lg:font-bold lg:text-[110px] lg:relative lg:top-13 lg:z-50 hidden ">Hey, I’m Kunal Sharma
         </div>
-        <div className="lg:block lg:font-bold lg:text-slate-800 lg:text-[110px] lg:relative lg:top-[-20px] lg:z-50 hidden ">Hey, I'm Kunal Sharma</div>
-            <div className="lg:block lg:font-bold lg:text-[110px] lg:text-slate-600 lg:relative lg:top-[-40px] lg:z-30 hidden ">Hey, I'm Kunal Sharma</div>
+        <div className="lg:block lg:font-bold lg:text-slate-800 lg:text-[110px] lg:relative lg:top-[-20px] lg:z-50 hidden ">Hey, I’m Kunal Sharma</div>
+            <div className="lg:block lg:font-bold lg:text-[110px] lg:text-slate-600 lg:relative lg:top-[-40px] lg:z-30 hidden ">Hey, I’m Kunal Sharma</div>
        </div>
         
 
