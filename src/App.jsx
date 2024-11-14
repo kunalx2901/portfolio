@@ -26,12 +26,14 @@ requestAnimationFrame(raf);
 
 
   return <>
+    <div className='overflow-hidden'>
     <Navbar/>
     <Home/>
     <About/>
     <Tech/>
     <Projects/>
     <Contact/>
+    </div>
     </>
 }
 
