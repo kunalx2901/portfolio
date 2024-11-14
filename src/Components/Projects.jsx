@@ -3,12 +3,12 @@ import githubIcon from "../assets/tech-icons/github icon.webp"
 
 export function Projects(){
     return <>
-        <div className="font-bold text-6xl min-h-[100vh] flex flex-col items-center mb-12 gap-5">
+        <div className="font-bold lg:text-6xl text-3xl h-[90vh] min-h-[100vh] flex flex-col items-center mb-12 gap-5">
             <div className="flex justify-center items-center mt-10">
                 Projects
             </div>
         
-        <div className='flex justify-center items-center flex-wrap lg:gap-20 mt-32 bg-purple-600'>
+        <div className='flex justify-center items-center flex-wrap lg:gap-20 mt-32 '>
             {project.map((e)=>{
                 return  <div key={e.id} className='w-[25%] text-xl font-bold border-2 border-slate-300 rounded-3xl lg:p-7 bg-black shadow-2xl shadow-zinc-800 text-white gap-10 z-10 hover:scale-90 duration-500 ease-in-out'>
                                 <img src={e.img} alt="" className='rounded-xl mb-4'/>

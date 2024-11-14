@@ -61,7 +61,7 @@ const data = [
     {
         id:9,
         img:prismaIcon,
-        title:"Prisma ORM"
+        title:"Prisma"
     },
     {
         id:10,

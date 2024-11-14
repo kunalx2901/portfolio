@@ -9,7 +9,7 @@ export function Home(){
 
     return <>
     
-    <div className="font font-bold text-9xl flex lg:flex-col justify-center items-center relative lg:h-[90vh] lg:min-h-[100vh] ">
+    <div className="font font-bold text-9xl flex lg:flex-col justify-center min-h-fit items-center relative lg:h-[90vh] lg:min-h-[95vh] ">
         
         <motion.div 
         initial={{
@@ -22,21 +22,21 @@ export function Home(){
             duration:1.5,
             ease:"easeInOut"
         }}
-        className="absolute z-10 lg:left-[150px] left-[80px] top-[28%] lg:top-0">
-            <img src={webDev} alt="" className="lg:w-[60%] w-[75%] "/>
+        className="absolute z-10 lg:left-[150px] left-[60px] top-[28%] lg:top-0">
+            <img src={webDev} alt="" className="lg:w-[60%] w-[80%] "/>
         </motion.div>
         <div className="font text-6xl lg:hidden relative h-[90vh] left-[10vh] ">
             <span className="font-semibold text-slate-500">Hey I’m </span> <br></br> 
              <span className="font-semibold text-slate-900">Kunal Sharma</span>
         </div>
-        <div className="text-3xl absolute top-[70vh] lg:hidden mb-10">
-            <span className="relative left-[-15%] text-3xl font-semibold text-slate-600">Full </span>
-            <span className="relative left-[50%] text-3xl font-semibold text-slate-600">Stack</span> 
+        {/* <div className="text-3xl absolute top-[75vh] lg:hidden mb-10">
+            <span className="text-3xl font-semibold text-slate-600">Full </span>
+            <span className=" text-3xl font-semibold text-slate-600">Stack</span> 
             <div className="flex justify-center items-center absolute flex-col left-[-6%]">
             <span className="text-3xl font-extrabold relative bottom-[-1.5vh] left-5   text-slate-900">Web</span>
             <span className="text-3xl font-extrabold relative bottom-[-1vh] left-5 text-slate-900">Developer</span>
             </div> 
-        </div>
+        </div> */}
 
         <div className="lg:absolute lg:bottom-4 lg:right-20 lg:block hidden z-0 ">
             <Gooy />
