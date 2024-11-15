@@ -34,18 +34,9 @@ export function Home(){
             <div className="text-4xl font-semibold relative right[-10%] top-12 w-[400px]">
             <AboutAnimation abouts={["" , "Web Developer" ,""]}/>
             </div>
-            <div className="text-4xl font-semibold relative right[-10%] w-[400px]">
-            <AboutAnimation abouts={["" , ""]}/>
-            </div>
+          
         </div>
-        {/* <div className="text-3xl absolute top-[75vh] lg:hidden mb-10">
-            <span className="text-3xl font-semibold text-slate-600">Full </span>
-            <span className=" text-3xl font-semibold text-slate-600">Stack</span> 
-            <div className="flex justify-center items-center absolute flex-col left-[-6%]">
-            <span className="text-3xl font-extrabold relative bottom-[-1.5vh] left-5   text-slate-900">Web</span>
-            <span className="text-3xl font-extrabold relative bottom-[-1vh] left-5 text-slate-900">Developer</span>
-            </div> 
-        </div> */}
+        
 
         <div className="lg:absolute lg:bottom-4 lg:right-20 lg:block hidden z-0 ">
             <Gooy />
@@ -76,10 +67,6 @@ function AboutAnimation ( {abouts} ){
     const mainFadeDuration = 0.25
     const swapDelay = 2000
     
-
-    const arr= [1,2,3,4,5]
-    console.log(arr.length)
-
     const[aboutsIndex , setAboutsIndex] = useState(0)
 
     useEffect(()=>{
