@@ -1,8 +1,16 @@
 import sundown from './assets/sundown.png'
 import tiktaktoe from './assets/tiktactoe.png'
 import bubble from './assets/bubblegame.png'
+import echo from './assets/echo.png'
 
  const project = [
+    {
+        id:4,
+        img:echo,
+        title:"Echosphere",
+        link:"https://echosphere-blog.vercel.app/",
+        detail:"Echosphere offers an intuitive platform for blogging with a modern tech stack: React, Tailwind CSS, TypeScript, Prisma, and PostgreSQL. Secure JWT authentication enables seamless user access to make the blogging experience hassle-free. Users can create, view, and manage blogs stored in the database, with new features planned for future development."
+    },
     {
         id:1,
         img:sundown,

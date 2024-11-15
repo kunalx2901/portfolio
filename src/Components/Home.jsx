@@ -22,12 +22,21 @@ export function Home(){
             duration:1.5,
             ease:"easeInOut"
         }}
-        className="absolute z-10 lg:left-[150px] left-[60px] top-[28%] lg:top-0">
+        className="absolute z-10 lg:left-[150px] left-[60px] top-[26%] lg:top-[-5%]">
             <img src={webDev} alt="" className="lg:w-[60%] w-[80%] "/>
         </motion.div>
-        <div className="font text-6xl lg:hidden relative h-[90vh] left-[10vh] ">
+        <div className="font text-6xl lg:hidden relative h-[90vh] left-[10%] top-5">
             <span className="font-semibold text-slate-500">Hey I’m </span> <br></br> 
-             <span className="font-semibold text-slate-900">Kunal Sharma</span>
+            <div className="text-5xl font-semibold absolute right[-10%] w-[400px]">
+            <AboutAnimation abouts={[" Kunal Sharma " , "Full Stack " , ""]}/>
+            
+            </div>
+            <div className="text-4xl font-semibold relative right[-10%] top-12 w-[400px]">
+            <AboutAnimation abouts={["" , "Web Developer" ,""]}/>
+            </div>
+            <div className="text-4xl font-semibold relative right[-10%] w-[400px]">
+            <AboutAnimation abouts={["" , ""]}/>
+            </div>
         </div>
         {/* <div className="text-3xl absolute top-[75vh] lg:hidden mb-10">
             <span className="text-3xl font-semibold text-slate-600">Full </span>
@@ -42,7 +51,7 @@ export function Home(){
             <Gooy />
         </div>
        
-       <div className="absolute top-45 right-28 w-[1500px] pl-[350px] ">
+       <div className="absolute top-[25vh] right-28 w-[1500px] pl-[350px] ">
         <div className="lg:flex gap-5 lg:font-bold lg:text-[100px] lg:relative lg:top-13 lg:w-full lg:z-50 hidden 
         "> Hey, I’m <AboutAnimation abouts={[" Kunal Sharma" , "Full"]}/>
         </div>
