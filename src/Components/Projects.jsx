@@ -1,6 +1,7 @@
 import project from '../project'
 import githubIcon from "../assets/tech-icons/github icon.webp"
 import {motion} from 'framer-motion'
+import projectIcon from '../assets/logo-project.png';
 
 export function Projects(){
     const width = window.innerWidth;
@@ -24,11 +25,18 @@ export function Projects(){
                 duration:1,
                 ease:'easeInOut'
             }}
-            className="flex justify-center items-center mt-10 ">
-                Projects
+            className="flex flex-col justify-center items-center mt-10 ">
+               <div className='flex gap-2 justify-center items-center'>
+               Projects
+               <img src={projectIcon} alt="" className='lg:w-16 w-8'/>
+               </div>
+            <div className='lg:hidden text-xl font-bold text-slate-600'>
+                (Use Desktop For Better Experience)
+            </div>
             </motion.div>
+
         
-        <div className='lg:flex grid grid-cols-1 lg:pl-0 pl-[10%] lg:justify-center lg:items-center lg:flex-wrap lg:gap-20 lg:mt-24 mt-5 gap-8'>
+        <div className='lg:flex grid grid-cols-1 lg:pl-0 pl-[10%] lg:justify-center lg:items-center lg:flex-wrap lg:gap-20 lg:mt-24 mt-10 gap-8'>
             {project.map((e)=>{
                 if(window.innerWidth<500 && window.innerHeight<800){
                     while(e.id>1){
