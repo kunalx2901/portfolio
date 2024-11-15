@@ -3,9 +3,11 @@ import about from '../assets/information-app.png'
 import {motion} from 'framer-motion'
 
 export default function About(){
-    return <>
+
     
-    <div className='lg:h-[90vh] bg-black text-slate-100 p-10 relative'>
+
+    return <>
+    <div id='about' className='lg:h-[90vh] bg-black text-slate-100 p-10 relative'>
        
     <motion.div 
     initial={{

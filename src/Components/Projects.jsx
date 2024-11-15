@@ -4,12 +4,12 @@ import {motion} from 'framer-motion'
 import projectIcon from '../assets/logo-project.png';
 
 export function Projects(){
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+    // const width = window.innerWidth;
+    // const height = window.innerHeight;
 
-    console.log(width,height)
+    // console.log(width,height)
     return <>
-        <div className="font-bold lg:text-6xl text-3xl min-h-[90vh] lg:min-h-[105vh] flex flex-col items-center lg:mb-12 lg:gap-5">
+        <div id='projects' className="font-bold lg:text-6xl text-3xl min-h-[90vh] lg:min-h-[105vh] flex flex-col items-center lg:mb-12 lg:gap-5">
             <motion.div 
             initial={{
                 y:100,

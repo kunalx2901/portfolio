@@ -1,5 +1,6 @@
 import logo from "../assets/home.png"
 import BurgerButton from "./Burgerbutton"
+import { Context } from "./Context"
 
 export function Navbar(){
    
@@ -14,6 +15,7 @@ export function Navbar(){
         </div>
         <div className="lg:mr-10 mr-2">
           <BurgerButton/>
+          <Context/>
         </div>
         
     </div>

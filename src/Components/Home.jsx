@@ -8,8 +8,7 @@ export function Home(){
     
 
     return <>
-    
-    <div className="font font-bold text-9xl flex lg:flex-col justify-center min-h-fit items-center relative lg:h-[90vh] lg:min-h-[95vh] ">
+    <div id="home" className="font font-bold text-9xl flex lg:flex-col justify-center min-h-fit items-center relative lg:h-[90vh] lg:min-h-[95vh] ">
         
         <motion.div 
         initial={{
