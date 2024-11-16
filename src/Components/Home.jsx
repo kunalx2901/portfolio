@@ -5,7 +5,6 @@ import webDev from '../assets/webDev.png'
 
 export function Home(){
 
-    
 
     return <>
     <div id="home" className="font font-bold text-9xl flex lg:flex-col justify-center min-h-fit items-center relative lg:h-[90vh] lg:min-h-[95vh] ">
@@ -42,11 +41,11 @@ export function Home(){
         </div>
        
        <div className="absolute top-[25vh] right-28 w-[1500px] pl-[350px] ">
-        <div className="lg:flex gap-5 lg:font-bold lg:text-[100px] lg:relative lg:top-13 lg:w-full lg:z-50 hidden 
-        "> Hey, I’m <AboutAnimation abouts={[" Kunal Sharma" , "Full"]}/>
+        <div className=" lg:flex gap-5 lg:font-bold lg:text-[100px] lg:relative lg:top-13 lg:w-full lg:z-50 hidden 
+        "> Hey, I’m <AboutAnimation abouts={[" Kunal Sharma","Full Stack",""]}/>        
         </div>
-        <div className="lg:flex gap-5 lg:font-bold lg:text-slate-800 lg:text-[100px] lg:relative lg:top-[-20px] lg:z-50 hidden ">Hey, I’m  <AboutAnimation abouts={[" Kunal Sharma" , "Stack"]}/></div>
-        <div className="lg:flex gap-5 lg:font-bold lg:text-[100px] lg:text-slate-600 lg:relative lg:top-[-40px] lg:z-30 hidden ">Hey, I’m  <AboutAnimation abouts={[" Kunal Sharma" , "Web Developer"]}/></div>
+        <div className="lg:flex gap-5 lg:font-bold lg:text-slate-800 lg:text-[90px] lg:relative lg:left-[390px] lg:top-[-2px] lg:z-50 hidden "><AboutAnimation abouts={[" " , "Web Developer" ," "]}/>
+        </div>
        </div>
         
 
@@ -76,7 +75,6 @@ function AboutAnimation ( {abouts} ){
         return () => clearInterval(intervalId)
     })
 
-    console.log(abouts[aboutsIndex].split(''))
     return <div className="">
         {abouts[aboutsIndex].split('').map((l,i)=>{
             return <motion.span

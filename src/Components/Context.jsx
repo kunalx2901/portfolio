@@ -1,24 +1,27 @@
 import git from '../assets/tech-icons/github icon.webp'
 import link from '../assets/tech-icons/linkedin.webp'
-import insta from '../assets/tech-icons/insta.webp'
+import vercel from '../assets/tech-icons/vercelIcon.webp'
 const menu = [
 
     {
         id:1,
         title:"Github",
-        img:git
+        img:git,
+        url:"https://github.com/kunalx2901"
     },
 
     {
         id:2,
         title:"LinkedIn",
-        img:link
+        img:link,
+        url:"https://www.linkedin.com/in/kunal-sharma-profile"
     },
 
     {
         id:3,
-        title:"Instagram",
-        img:insta
+        title:"Vercel",
+        img:vercel,
+        url:"https://vercel.com/kunal-sharmas-projects"
     },
 
 ]
@@ -30,7 +33,7 @@ export const Context = ()=>{
         {menu.map((e)=>{
             return <div key={e.id} className='flex justify-center items-center gap-1 text-lg '>
                 <img src={e.img} alt="" className='bg-black rounded-full w-6'/>
-                <a href={`#${e.title}`} className="font-bold">{e.title}</a>
+                <a href={`${e.url}`} className="font-bold">{e.title}</a>
                 
             </div>
         })}
