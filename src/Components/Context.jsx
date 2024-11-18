@@ -29,11 +29,14 @@ const menu = [
 
 export const Context = ()=>{
     return <>
-    <div>
+    <div className='flex flex-col text-3xl items-center justify-center gap-10 bg-slate-950 min-h-[107vh] absolute z-40 right-0 lg:w-[500px] w-[200px] top-0 '>
+        
         {menu.map((e)=>{
-            return <div key={e.id} className='flex justify-center items-center gap-1 text-lg '>
-                <img src={e.img} alt="" className='bg-black rounded-full w-6'/>
-                <a href={`${e.url}`} className="font-bold">{e.title}</a>
+            return <div key={e.id} className='grid grid-cols-2 gap-1 lg:text-4xl text-xl'>
+                <div className=' flex justify-center items-center lg:w-10 w-5 lg:gap-4 gap-2'>
+                    <img src={e.img} alt="" className='rounded-full w-10'/>
+                    <a href={`${e.url}`} className="font-semibold text-white">{e.title}</a>
+                </div>
                 
             </div>
         })}
