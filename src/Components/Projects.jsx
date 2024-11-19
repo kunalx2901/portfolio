@@ -9,7 +9,7 @@ export function Projects(){
 
     // console.log(width,height)
     return <>
-        <div id='projects' className="font-bold lg:text-6xl text-3xl min-h-[90vh] lg:min-h-[105vh] flex flex-col items-center lg:mb-12 lg:gap-5">
+        <div id='projects' className="font-bold lg:text-6xl text-3xl min-h-[90vh] lg:min-h-[105vh] flex flex-col items-center lg:mb-12 lg:gap-5 ">
             <motion.div 
             initial={{
                 y:100,
