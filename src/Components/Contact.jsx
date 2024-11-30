@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import img from '../assets/background.jpg'
+import {motion} from 'framer-motion'
 
 export function Contact() {
 
@@ -35,21 +36,48 @@ export function Contact() {
       <div className='absolute bottom-[-20%] w-screen '>
         <img src={img} alt="" className='w-full scale-y-75' /> 
       </div>
-    <div className="font-bold text-xl h-[100vh] text-white bg-black  flex justify-between items-center pr-56" >
-      <div className='pl-56 flex flex-col gap-5 z-20'>
+    <div className="font-bold text-xl h-[100vh] text-white bg-black flex lg:flex-row flex-col lg:justify-between justify-center items-center pr-56" >
+      <motion.div 
+            initial={{
+                y:100,
+                opacity:0
+                
+            }}
+            whileInView={{
+                y:0,
+                opacity:1
+               
+            }}
+            transition={{
+                duration:1,
+                ease:'easeInOut'
+            }} className='pl-56 flex lg:flex-col lg:gap-5 gap-2 z-20 relative top-5 '>
       
-       <div className='text-9xl font-bold inline-block'> Let's</div>
-        
-        <div className='text-9xl font-extrabold inline-block' >Connect</div> 
-      </div>
-       <div className="p-10 rounded-lg shadow-md flex flex-col gap-5 justify-center items-center z-20">
+       <div className='lg:text-9xl text-3xl font-bold inline-block'> Let's</div>
+        <div className='lg:text-9xl text-3xl font-bold inline-block' >Connect</div> 
+      </motion.div>
+       <motion.div 
+            initial={{
+                x:100,
+                opacity:0
+                
+            }}
+            whileInView={{
+                x:0,
+                opacity:1
+               
+            }}
+            transition={{
+                duration:1,
+                ease:'easeInOut'}}
+                 className="p-10 rounded-lg shadow-md flex flex-col gap-5 justify-center items-end z-20 relative left-28">
         <form ref={form} onSubmit={sendEmail} className=' flex flex-col gap-5 justify-center items-center border-2 px-10 py-16 rounded-lg shadow-lg shadow-white'>
             <label>Name</label>
-            <input type="text" name="user_name" className=' text-black px-5 rounded-lg outline-none py-2 w-96'/>
+            <input type="text" name="user_name" className=' text-black lg:px-5 px-3 rounded-lg outline-none lg:py-2 py-1 lg:w-96 w-36'/>
             <label>Email</label>
-            <input type="email" name="user_email" className=' text-black px-5 rounded-lg outline-none py-2 w-96'/>
+            <input type="email" name="user_email" className=' text-black lg:px-5 px-3 rounded-lg outline-none lg:py-2 py-1 lg:w-96 w-48'/>
             <label>Message</label>
-            <textarea name="message" className=' text-black px-5 rounded-lg w-full outline-none py-2 h-full'/>
+            <textarea name="message" className=' text-black lg:px-5 px-3 rounded-lg w-full outline-none lg:py-2 py-1 h-full'/>
            {loading ? <div role="status">
             <button type="submit" className='bg-slate-500 px-6 text-lg cursor-pointer py-1 rounded-md' > 
                       <svg aria-hidden="true" className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +93,7 @@ export function Contact() {
                     }
            
             </form>
-       </div>
+       </motion.div>
     </div>
     </div>  
     </>
