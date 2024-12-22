@@ -1,7 +1,7 @@
 import {easeInOut, motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { Gooy } from "./Gooy";
-import webDev from '../assets/webDev.png'
+import webDev from '../assets/webdev.png'
 
 export function Home(){
 
