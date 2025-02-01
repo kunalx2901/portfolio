@@ -7,7 +7,7 @@ export function Home(){
 
 
     return <>
-    <div id="home" className="font font-bold text-9xl flex lg:flex-col justify-center min-h-fit items-center relative lg:h-[90vh] lg:min-h-[95vh] z-10 ">
+    <div id="home" className="font font-bold text-9xl flex lg:flex-col justify-center min-h-fit items-center relative lg:min-h-[95vh] z-10 ">
         
         <motion.div 
         initial={{
@@ -20,16 +20,16 @@ export function Home(){
             duration:1.5,
             ease:"easeInOut"
         }}
-        className="absolute z-10 lg:left-[150px] left-[60px] top-[26%] lg:top-[-5%]">
-            <img src={webDev} alt="" className="lg:w-[60%] w-[80%] "/>
+        className="absolute z-10 lg:left-[5%] left-[6vw] top-[26%] lg:top-[-5%]">
+            <img src={webDev} alt="" className="lg:w-[28vw] w-[80vw] "/>
         </motion.div>
-        <div className="font text-6xl lg:hidden relative h-[90vh] left-[10%] top-5">
+        <div className="font text-6xl lg:hidden relative min-h-[90vh] left-[4vw] top-5">
             <span className="font-semibold text-slate-500">Hey I’m </span> <br></br> 
-            <div className="text-5xl font-semibold absolute right[-10%] w-[400px]">
-            <AboutAnimation abouts={[" Kunal Sharma " , "Full Stack " , ""]}/>
+            <div className="text-5xl font-semibold absolute right[-40vw] w-[100vw]">
+            <AboutAnimation abouts={[" Kunal Sharma  " , "Full Stack " , ""]}/>
             
             </div>
-            <div className="text-4xl font-semibold relative right[-10%] top-12 w-[400px]">
+            <div className="text-4xl font-semibold relative right[-20vw] top-12 w-[90vw]">
             <AboutAnimation abouts={["" , "Web Developer" ,""]}/>
             </div>
           
@@ -40,11 +40,11 @@ export function Home(){
             <Gooy />
         </div>
        
-       <div className="absolute top-[25vh] right-28 w-[1500px] pl-[350px] ">
-        <div className=" lg:flex gap-5 lg:font-bold lg:text-[100px] lg:relative lg:top-13 lg:w-full lg:z-50 hidden 
+       <div className="absolute top-[25vh] right-28 w-[100vw] pl-[80vh] ">
+        <div className=" lg:flex gap-5 lg:font-bold lg:text-[5vw] lg:relative lg:top-13 lg:w-full lg:z-50 hidden 
         "> Hey, I’m <AboutAnimation abouts={[" Kunal Sharma","Full Stack",""]}/>        
         </div>
-        <div className="lg:flex gap-5 lg:font-bold lg:text-slate-800 lg:text-[90px] lg:relative lg:left-[390px] lg:top-[-2px] lg:z-50 hidden "><AboutAnimation abouts={[" " , "Web Developer" ," "]}/>
+        <div className="lg:flex gap-5 lg:font-bold lg:text-slate-800 lg:text-[4.5vw] lg:relative lg:left-[19vw] lg:top-[-2px] lg:z-50 hidden "><AboutAnimation abouts={[" " , "Web Developer" ," "]}/>
         </div>
        </div>
         

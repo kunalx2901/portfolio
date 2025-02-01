@@ -7,7 +7,7 @@ export default function About(){
     
 
     return <>
-    <div id='about' className='lg:h-[90vh] bg-black text-slate-100 p-10 relative'>
+    <div id='about' className='lg:max-h-[130vh] bg-black text-slate-100 p-10 relative'>
        
     <motion.div 
     initial={{
@@ -48,7 +48,7 @@ export default function About(){
         ease:'easeInOut'
     }}
     className='border-2 border-slate-200 py-5 lg:p-10 rounded-2xl lg:py-32 shadow-lg lg:shadow-xl lg:shadow-slate-400 shadow-slate-400 '>
-    <div className='lg:flex lg:flex-row lg:justify-around lg:items-center flex flex-col justify-center items-center  gap-7'>
+    <div className='lg:flex lg:flex-row lg:justify-around lg:items-center flex flex-col justify-center items-center gap-7'>
         <img src={myImage} alt="" className='rounded-3xl lg:w-64 w-32 h-38 lg:h-80 hover:scale-110 duration-500 ease-in-out cursor-not-allowed'/>
         <div className='lg:w-[50%] lg:text-3xl text-sm font cursor-context-menu w-[84%]'>
         <p>

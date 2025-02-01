@@ -4,7 +4,7 @@ import tech from '../assets/innovation.png'
 export function Tech(){
     
     return <>
-    <motion.div id='tech' className="font-bold lg:text-6xl text-3xl h-[90vh] flex flex-col items-center lg:gap-24 gap-5 bg-black text-white">
+    <motion.div id='tech' className="font-bold lg:text-6xl text-3xl min-h-[95vh] flex flex-col items-center lg:gap-16 gap-5 bg-black text-white ">
         <motion.div
         initial={{
             y:100,
@@ -20,7 +20,7 @@ export function Tech(){
             duration:1,
             ease:'easeInOut'
         }}
-        className="font-bold flex justify-center items-center gap-4">
+        className="font-bold flex justify-center items-center gap-4 mt-10">
             Tech Stack
             <div>
                 <img src={tech} alt=""  className='lg:w-10 bg-white rounded-2xl'/>
